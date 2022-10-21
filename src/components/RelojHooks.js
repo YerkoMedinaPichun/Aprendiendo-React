@@ -19,7 +19,7 @@ export default function RelojHooks() {
       clearInterval(temporizador);
     }
     return () => {
-      console.log("Fase de desmontaje");
+      //console.log("Fase de desmontaje");
       clearInterval(temporizador);
     };
   }, [visible]);
@@ -27,9 +27,11 @@ export default function RelojHooks() {
   return (
     <>
       <h2>Reloj con Hooks</h2>
-      {visible && <Reloj hora={hora} />}
-      <button onClick={() => setVisible(true)}>Iniciar</button>
-      <button onClick={() => setVisible(false)}>Detener</button>
+      <details>
+        {visible && <Reloj hora={hora} />}
+        <button onClick={() => setVisible(true)}>Iniciar</button>
+        <button onClick={() => setVisible(false)}>Detener</button>
+      </details>
     </>
   );
 }

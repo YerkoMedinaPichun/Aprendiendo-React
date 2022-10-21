@@ -4,7 +4,7 @@ export default function ScrollHooks() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    console.log("Moviendo el scroll");
+    //console.log("Moviendo el scroll");
     const detectarScroll = () => setScrollY(window.pageYOffset);
 
     window.addEventListener("scroll", detectarScroll);
@@ -19,18 +19,18 @@ export default function ScrollHooks() {
 
   //Si necesitamos que una peticion, como una API externa solamente se ejecute una sola vez, se recomienda dejar la lista de dependencias (El arreglo) vacío
   useEffect(() => {
-    console.log("Fase de Montaje");
+    //console.log("Fase de Montaje");
   }, []);
 
   //Un use effect que no tiene definida la lista de dependencias es como un ComponentDidUpdate
   useEffect(() => {
-    console.log("Fase de Actualizacion");
+    //console.log("Fase de Actualizacion");
   });
 
   //Fase de desmontaje
   useEffect(() => {
     return () => {
-      console.log("Fase de Desmontaje");
+      //console.log("Fase de Desmontaje");
     };
   });
 
