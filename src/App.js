@@ -5,6 +5,15 @@ import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import RenderizadoElementos from "./components/RenderizadoElementos";
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+import Padre from "./components/ComunicacionComponentes";
+import CicloVida from "./components/CicloVida";
+import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
+
+import ScrollHooks from "./components/ScrollHooks";
+import RelojHooks from "./components/RelojHooks";
 
 function App() {
   return (
@@ -46,6 +55,34 @@ function App() {
           <Estado />
           <hr />
           <RenderizadoCondicional />
+          <hr />
+          <RenderizadoElementos />
+          <hr />
+          <EventosES6 />
+          <hr />
+          <EventosES7 />
+          <hr />
+          <MasSobreEventos />
+          <hr />
+          <Padre />
+          <hr />
+          <CicloVida />
+          <hr />
+          <AjaxApis />
+          <hr />
+          <ContadorHooks /*titulo="Seguidores"*/ />
+          <hr />
+          <ScrollHooks />
+          <hr />
+          <RelojHooks />
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+          <hr />
         </section>
       </header>
     </div>
