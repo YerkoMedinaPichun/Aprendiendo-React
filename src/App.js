@@ -18,6 +18,7 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
 import Referencias from "./components/Referencias";
 import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
           <hr />
           <Formularios />
           <hr />
+          <Estilos />
           <hr />
           <hr />
           <hr />
